@@ -20,7 +20,7 @@ def produkLaris(df):
 
 # Subheader
 st.subheader("Penjualan Paling Banyak dan Sedikit")
-col1, col2 = st.columns(2)
+st.columns(2) = col1, col2
 
 with col1:
     produkLaris_df = produkLaris(all_df)
