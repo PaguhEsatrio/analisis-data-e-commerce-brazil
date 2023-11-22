@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 from babel.numbers import format_currency
+from io import BytesIO
 sns.set(style='dark')
 all_df = pd.read_csv('dashboard/Semua Data.csv')
 
@@ -230,6 +231,10 @@ plt.plot(
     linewidth=2,
     color="#72BCD4"
 )
+ax.plt.title("Pengeluaran Customer 2018 ", loc="center", fontsize=20)
+ax.plt.xticks(fontsize=10, rotation=25)
+ax.plt.yticks(fontsize=10)
+
 # Simpan gambar ke dalam BytesIO
 image_stream = BytesIO()
 plt.savefig(image_stream, format='png')
