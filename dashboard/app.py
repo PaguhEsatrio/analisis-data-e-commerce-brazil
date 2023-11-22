@@ -230,10 +230,13 @@ plt.plot(
     linewidth=2,
     color="#72BCD4"
 )
-plt.title("Pengeluaran Customer 2018 ", loc="center", fontsize=20)
-plt.xticks(fontsize=10, rotation=25)
-plt.yticks(fontsize=10)
-st.pyplot(plt)
+# Simpan gambar ke dalam BytesIO
+image_stream = BytesIO()
+plt.savefig(image_stream, format='png')
+image_stream.seek(0)
+
+# Tampilkan gambar menggunakan st.image
+st.image(image_stream, caption='Grafik Pendapatan per Bulan', use_column_width=True)
 #============================================================================================== pendapatan selama beberapa bulan terakhir?
 
 #============================================================================================== review 
