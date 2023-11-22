@@ -246,27 +246,6 @@ image_stream.seek(0)
 
 # Tampilkan gambar menggunakan st.image
 st.image(image_stream, caption='Grafik Pendapatan per Bulan', use_column_width=True)
-# Plot grafik pendapatan per bulan
-plt.figure(figsize=(16, 8))
-
-plt.plot(
-    bulan_df["order_approved_at"],
-    bulan_df["Pengeluaran"],
-    marker='o',
-    linewidth=2,
-    color="#72BCD4"
-)
-ax.plt.title("Pengeluaran Customer 2018 ", loc="center", fontsize=20)
-ax.plt.xticks(fontsize=10, rotation=25)
-ax.plt.yticks(fontsize=10)
-
-# Simpan gambar ke dalam BytesIO
-image_stream = BytesIO()
-plt.savefig(image_stream, format='png')
-image_stream.seek(0)
-
-# Tampilkan gambar menggunakan st.image
-st.image(image_stream, caption='Grafik Pendapatan per Bulan', use_column_width=True)
 #============================================================================================== pendapatan selama beberapa bulan terakhir?
 
 #============================================================================================== review 
