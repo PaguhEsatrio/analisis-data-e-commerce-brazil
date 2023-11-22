@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
@@ -220,7 +221,31 @@ with col1:
 with col2:
     ratarata = bulan_df['Pengeluaran'].mean()
     st.markdown(f"Rata-rata Pengeluaran per bulan: **{ratarata}**")
+    
+order_dates = np.array(bulan_df["order_approved_at"])
+pengeluaran_values = np.array(bulan_df["Pengeluaran"])
 
+# Plot grafik pendapatan per bulan
+plt.figure(figsize=(16, 8))
+
+plt.plot(
+    order_dates,
+    pengeluaran_values,
+    marker='o',
+    linewidth=2,
+    color="#72BCD4"
+)
+plt.title("Pengeluaran Customer 2018 ", loc="center", fontsize=20)
+plt.xticks(fontsize=10, rotation=25)
+plt.yticks(fontsize=10)
+
+# Simpan gambar ke dalam BytesIO
+image_stream = BytesIO()
+plt.savefig(image_stream, format='png')
+image_stream.seek(0)
+
+# Tampilkan gambar menggunakan st.image
+st.image(image_stream, caption='Grafik Pendapatan per Bulan', use_column_width=True)
 # Plot grafik pendapatan per bulan
 plt.figure(figsize=(16, 8))
 
