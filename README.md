@@ -8,12 +8,12 @@ Proyek analisis data E-Commerce Brazilian yang divisualisasikan secara cloud mel
 
 ## Install Library
 ```
-pip install streamlit numpy seaborn pandas matplotlib unidecode
+pip install numpy babel matplotlib pandas seaborn streamlit
 ```
 
 ## Run Steamlit
 ```
-streamlit run dashboard.py
+streamlit run app.py
 ```
 
 ## Website Visualisasi
