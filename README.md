@@ -4,7 +4,7 @@
 Proyek analisis data E-Commerce Brazilian yang divisualisasikan secara cloud melalui sebuah website.
 
 ## Tampilan
-![dashboard.gif](https://github.com/PaguhEsatrio/analisis-data-e-commerce-brazil/dashboard.gif)
+![dashboard.gif](https://github.com/PaguhEsatrio/analisis-data-e-commerce-brazil/blob/main/dashboard.gif)
 
 
 ## Setup environment
