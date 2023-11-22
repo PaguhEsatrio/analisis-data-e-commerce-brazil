@@ -1,8 +1,11 @@
-# Cara Menjalankan Dashboard ✨
-
+# Project Data Analytics✨
 
 ## Deskripsi
-Proyek ini berupa analis data terhadap Brazilian E-Commerce yang divisualisasikan secara cloud melalui sebuah website.Tujuan utamanya yakni untuk memberikan insight dan pemahaman mengenai informasi data
+Proyek analisis data E-Commerce Brazilian yang divisualisasikan secara cloud melalui sebuah website.
+
+## Tampilan
+![dashboard.gif](https://github.com/PaguhEsatrio/analisis-data-e-commerce-brazil/dashboard.gif)
+
 
 ## Setup environment
 ```
