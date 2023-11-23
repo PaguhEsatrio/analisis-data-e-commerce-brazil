@@ -97,7 +97,7 @@ with col2:
     banyakStateKota_df = banyakStateKota(all_df)
     stateBanyakKota = banyakStateKota_df['jumlah'].max()
     spillKota =  banyakStateKota_df.loc[banyakState_df['jumlah'].idxmax()]['customer_city']
-    st.markdown(f"Customer Paling Banyak State : **{stateBanyakKota}** (**{spillKota}**) ")
+    st.markdown(f"Customer Paling Banyak Kota : **{stateBanyakKota}** (**{spillKota}**) ")
 
 fig, ax = plt.subplots(nrows=1, ncols=2, figsize=(16, 8))
 
