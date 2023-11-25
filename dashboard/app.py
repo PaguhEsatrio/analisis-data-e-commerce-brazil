@@ -10,7 +10,7 @@ all_df = pd.read_csv('dashboard/Semua Data.csv')
 
 # =================== Header
 st.header('Visualisasi Brazil E-Commerce Public Dataset')
-st.markdown("[Link Hasil Analisis Brazil E-Commerce Public Dataset Dengan Phyton](https://drive.google.com/file/d/1FTHWdtG2Fj1YBH2sTLNpviq0cQrCBeE3/view?usp=sharing)", unsafe_allow_html=True)
+st.markdown("[Link Hasil Analisis Brazil E-Commerce Public Dataset Dengan Python](https://drive.google.com/file/d/1FTHWdtG2Fj1YBH2sTLNpviq0cQrCBeE3/view?usp=sharing)", unsafe_allow_html=True)
 # =================== Header
 
 #============================================================================================== Produk Laris
