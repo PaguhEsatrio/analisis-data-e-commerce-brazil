@@ -23,7 +23,7 @@ def produkLaris(df):
 
 # Subheader
 st.subheader("Penjualan Paling Banyak dan Sedikit")
-col1, col2 = st.beta_columns(2)
+col1, col2 = st.columns(2)
 
 with col1:
     produkLaris_df = produkLaris(all_df)
@@ -86,7 +86,7 @@ def banyakStateKota(df):
 
 # Subheader
 st.subheader("Customer Terbanyak")
-col1, col2 = st.beta_columns(2)
+col1, col2 = st.columns(2)
 
 with col1:
     banyakState_df = banyakState(all_df)
@@ -138,7 +138,7 @@ def bayar(df):
 
 # Subheader
 st.subheader("Pembayaran Favorit")
-col1, col2 = st.beta_columns(2)
+col1, col2 = st.columns(2)
 
 with col1:
     bayar_df = bayar(all_df)
@@ -213,7 +213,7 @@ def bulan(df):
 
 # Subheader
 st.subheader("Pendapatan selama beberapa bulan terakhir (2018)?")
-col1, col2 = st.beta_columns(2)
+col1, col2 = st.columns(2)
 
 with col1:
     bulan_df = bulan(all_df)
